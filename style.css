@@ -1,0 +1,122 @@
+body {margin: 0;}  /*POR QUE VIENE CON MARGEN PREDETERMINADO?*/
+
+/*container1*/
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1f2937;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;         /*SI CAMBIO WIDTH POR FLEX-BASIS CAMBIA TODO*/
+    margin-top: 1rem; 
+}
+
+.textandpic {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    width: 80%;        /*SI CAMBIO WIDTH POR FLEX-BASIS CAMBIA TODO*/
+}
+
+.awesome {
+    flex-basis: 30%;        /*ACA WIDTH Y FLEX BASIS DA IGUAL*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+.header h3 {font-size: 24px; color: #f9faf8; margin: 0;}
+.awesome h1 {font-size: 48px; font-weight:bolder; color: #f9faf8; margin: 0;}
+.links a, .awesome p { font-size: 18px; color: #e5e7eb; text-decoration: none;}
+.awesome button {color: white; background: #3882f6; padding: 0.5rem; border-radius: 0.5rem; width: 8rem; }
+.links a {margin-left: 2rem;}
+
+
+/*container2*/
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foursquares {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    width: 60%;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;    /*SI CAMBIO WIDTH POR FLEX-BASIS EL BORDER DE .FOURSQUARES CAMBIA DE TAMANO (para que funcione tengo que sacar width de .foursquares)*/
+}
+
+.square img {border-radius: 1rem;}
+#sri {font-size: 36px; font-weight: bolder; color: #1f2937; margin: 2rem; }
+
+
+
+/*container3*/
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e5e7eb; 
+}
+
+.thor {width: 60%; margin: 6rem;}
+
+.thor .text {font-size: 36px; margin: 0; font-style: italic;}
+.thor .signature {margin:0 2rem 0 0; display: flex; justify-content: flex-end; padding-right: 1rem; font-weight: bold; font-size: 25px;}
+
+
+/*container4*/
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bluebox{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 5rem;
+    background: #3882f6;
+    border-radius: 0.5rem;
+}
+
+.bluecontent {
+    display: flex;
+    align-items: center; /*POR QUE SI SACO ESTO EL BOTON DE 'SIGN UP' SE AGRANDA Y AUNQUE LE PONGA PADDING 0 SIGUE IGUAL?*/
+    justify-content: space-between;
+    width: 75%; 
+}
+
+.bluetext {color: #e5e7eb;}
+.bluetext .p1 {font-weight: bold; font-size: 1.3rem; margin: 3rem 0 0.5rem 0;}
+.bluetext .p2 {margin: 0 0 3rem 0;}
+.bluebox button {color: white; background: #3882f6; padding: 0.5rem; border-radius: 0.5rem; width: 8rem; border: #e5e7eb solid 1px; }
+
+
+/*footer*/
+
+.footer {
+    background: #1f2937; 
+    color: #f9faf8; 
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {margin: 2rem;}
